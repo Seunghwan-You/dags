@@ -13,7 +13,7 @@ default_args = {
 with DAG(
     dag_id="my_dag_name",
     default_args=default_args,
-    start_date=datetime.datetime(2024, 1, 1),
+    start_date=datetime.datetime(2024, 5, 1),
     schedule_interval="@daily",  # 'schedule' 대신 'schedule_interval' 사용
     catchup=False,  # catchup을 원하지 않는 경우, 기본값은 True
 ) as dag:
